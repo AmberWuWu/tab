@@ -6,7 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="tab.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: block;
+            height: 50px;
+            padding-top: 21px;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+            width: 31%;
+            text-align: center;
+            background: pink;
+            float: left;
+            margin-left: 1.8%;
+            line-height: 30px;
+            height: 30px;
+            color: #fff;
+        }
+
+        .content {
+            width: 100%;
+            height: 100px;
+        }
+
+        .content1 {
+
+            background: yellow;
+        }
+
+        .content2 {
+
+            background: rgb(115, 255, 0);
+        }
+
+        .content3 {
+
+            background: rgb(0, 195, 255)
+        }
+    </style>
 </head>
 
 <body>
@@ -23,8 +67,8 @@
         var content1 = document.getElementById('content1');
         var content2 = document.getElementById('content2');
         var content3 = document.getElementById('content3');
-        var content = [content1, content2,content3];
-        for (var j = 0; j < content.length; j++) {
+        var content = [content1, content2, content3];
+        for (var j = 1; j < content.length; j++) {
             content[j].style.display = 'none';
         }
         var len = li.length;
